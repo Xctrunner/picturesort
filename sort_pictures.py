@@ -19,4 +19,5 @@ copy_list_of_img(img_list, sys.argv[3])
 
 # C:\Users\Walter\coding\picturesort> python .\sort_pictures.py '../manual_download/2021_07_katahdin' 'katahdin_full.txt' 'katahdin_full'
 # C:\Users\Walter\coding\picturesort> python .\combine_lists.py 'gannett_full.txt' .2 'katahdin_full.txt' .2 '20211029_combined'
-# python .\sort_pictures.py C:\Users\xctru\coding\manual_download\california_2022 'california_full.txt' 'california_full'
+# python .\sort_pictures.py C:\Users\xctru\coding\manual_download\california_2022 california_full.txt california_full
+# C:\Users\xctru\coding\picturesort>python .\combine_lists.py 20211216_combined.txt .8 california_full.txt .3 20220221_combined

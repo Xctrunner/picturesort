@@ -49,16 +49,18 @@ def is_left_img_better(img1, img2):
             break
 
     exif1 = dict(im1._getexif().items())
-    if exif1[orientation] == 8:
-        im1 = im1.rotate(90, expand=True)
-    elif exif1[orientation] == 6:
-        im1 = im1.rotate(270, expand=True)
+    if orientation in exif1:
+        if exif1[orientation] == 8:
+            im1 = im1.rotate(90, expand=True)
+        elif exif1[orientation] == 6:
+            im1 = im1.rotate(270, expand=True)
 
     exif2 = dict(im2._getexif().items())
-    if exif2[orientation] == 8:
-        im2 = im2.rotate(90, expand=True)
-    elif exif2[orientation] == 6:
-        im2 = im2.rotate(270, expand=True)
+    if orientation in exif2:
+        if exif2[orientation] == 8:
+            im2 = im2.rotate(90, expand=True)
+        elif exif2[orientation] == 6:
+            im2 = im2.rotate(270, expand=True)
 
     background_color = (0, 0, 0)
 
